@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faugei</title>
+
+    <!-- Tailwind cdn link below -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font awesome link below -->
+    <script src="https://kit.fontawesome.com/1890632051.js" crossorigin="anonymous"></script>
+
+    <!-- CSS File link below -->
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+
+<body>
+    <!-- Header part starts from here -->
+    <header class="max-w-6xl my-0 mx-auto">
+        <!-- Navbar starts from here -->
+        <nav class="flex justify-between items-center mt-6 mb-7 sm:mb-32 mx-2.5 sm:mx-0">
+            <!-- logo container -->
+            <div class="cursor-pointer">
+                <img class="w-[50%] sm:w-full" src="./Styles/images/logo.png" alt="Logo">
+            </div>
+            <div class="flex gap-12">
+                <li class="list-none font-inter text-base font-normal text-gray-900 hidden sm:inline-block"><a
+                        href="">Home</a></li>
+                <li class="list-none font-inter text-base font-normal text-gray-400 hidden sm:inline-block"><a
+                        href="">Shop</a></li>
+                <li class="list-none font-inter text-base font-normal text-gray-400 hidden sm:inline-block"><a
+                        href="">About Us</a></li>
+                <li class="list-none font-inter text-base font-normal text-gray-900"><a href=""><i
+                            class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i> Cart ($56)</a></li>
+            </div>
+        </nav>
+        <!-- Navbar ends from here -->
+
+        <!-- Banner starts from here -->
+        <section class="sm:flex sm:justify-between sm:items-end sm:flex-row-reverse mb-16 sm:mb-32">
+            <img class="sm:w-full mb-7 sm:mb-0" src="./Styles/images/hero-flower.png" alt="Banner Flower Image">
+            <div class="mx-4 sm:mx-0">
+                <div class="mb-3.5">
+                    <h3 class="text-2xl sm:text-6xl font-noto text-black font-bold">ALWAYS <span
+                            class="text-[#E95A08]">FRESH <br>FLOWERS</span></h3>
+                </div>
+                <div>
+                    <p class="font-inter text-sm sm:text-[22px] font-normal text-[#00000080]">Indulge your senses with
+                        the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we
+                        offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Banner ends from here -->
+    </header>
+    <!-- Header part ends from here -->
+
+    <!-- Main part starts from here -->
+    <main class="">
+        <!-- Our plants starts from here -->
+        <section class="max-w-6xl my-0 mx-auto mb-10 sm:mb-52">
+            <!-- Our plants header text container -->
+            <div class="text-center mx-7 sm:mx-0 sm:px-32 mb-7 sm:mb-12">
+                <h3 class="font-noto text-2xl sm:text-5xl font-bold text-black mb-4"><span
+                        class="text-[#E95A08]">Our</span> Plants
+                </h3>
+                <p class="font-inter text-sm sm:text-2xl font-normal text-[#00000080] ">Indulge your senses with the
+                    beauty and
+                    fragrance of our fresh flower shop. From classic roses to
+                    exotic blooms, we
+                    offer a wide variety of fresh.</p>
+            </div>
+
+            <!-- Our plants cards container -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-7 gap-x-5 mx-3.5 sm:mx-0">
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base sm:text-2xl font-medium">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+                <!-- our plant cards -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="mb-[30px]" src="./Styles/images/sample-flower-image.png" alt="flower product image">
+                    <h5 class="font-inter text-black text-base font-medium sm:text-2xl">Lily Blossom</h5>
+                    <p class="font-inter text-black text-base font-bold mb-[30px] sm:text-2xl">20 $USD</p>
+                    <button onclick="addToCart()"
+                        class="font-inter text-white text-base font-semibold bg-[#E95A08] px-5 py-2.5 cursor-pointer">ADD
+                        TO CART</button>
+                </div>
+            </div>
+        </section>
+        <!-- Our plants ends from here -->
+
+        <!-- Trusted seller starts here -->
+        <section class="max-w-6xl my-0 mx-auto">
+            <div class="mb-12 sm:mb-36 mx-5 sm:mx-0 relative">
+                <div class="sm:flex justify-between items-center gap-[60px]">
+                    <img class="hidden sm:inline w-1/4 absolute -top-1/5 right-[43%] slow-spin"
+                        src="./Styles/images/trusted-badge.png" alt="A badge icon">
+                    <img class="w-full mb-4" src="./Styles/images/flower-store.png" alt="Flower store desk image">
+                    <!-- Trusted badge -->
+                    <div>
+                        <h3 class="font-noto text-2xl sm:text-5xl font-bold text-black mb-4">Flower & Plants Lover</h3>
+                        <li class="font-inter text-[#00000080] mb-4 text-sm sm:text-2xl font-normal ms-1.5">
+                            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses
+                            to exotic blooms, we
+                            offer a wide variety of fresh.
+                        </li>
+                        <li class="font-inter text-[#00000080] mb-4 text-sm sm:text-2xl font-normal ms-1.5">
+                            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses
+                            to exotic blooms, we
+                            offer a wide variety of fresh.
+                        </li>
+                        <li class="font-inter text-[#00000080] text-sm sm:text-2xl font-normal ms-1.5">
+                            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses
+                            to exotic blooms, we
+                            offer a wide variety of fresh.
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trusted seller ends here -->
+
+        <!-- Deals section starts from here -->
+        <section class="max-w-6xl my-0 mx-auto">
+            <!-- Deals text container -->
+            <div class="text-center mb-12 sm:mb-32 mx-4 sm:mx-0">
+                <h3 class="text-black font-noto text-2xl sm:text-5xl font-bold mb-4">
+                    <span class="text-[#E95A08]">Latest</span> Deals
+                </h3>
+                <p class="text-[#00000080] font-noto text-sm sm:text-2xl font-normal sm:px-32">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    exotic blooms, we
+                    offer a wide variety of fresh.
+                </p>
+            </div>
+
+            <!-- image collage container -->
+            <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-6 mb-11 sm:mb-32 mx-4 sm:mx-0">
+
+                <!-- 2 image container -->
+                <div class="flex flex-col justify-between items-center gap-2.5">
+                    <div class="relative bg-gray-400 rounded-xl">
+                        <img class="rounded-xl mix-blend-multiply" src="./Styles/images/deal-bloom.png" alt="">
+                        <div class="absolute top-[40%] right-[15%] sm:right-[25%] text-center">
+                            <h3 class="font-noto text-xl font-bold text-white">30% Off |
+                                Ana Plant</h3>
+                            <p class=" text-base font-inter font-semibold text-white underline">
+                                Shop Now</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-gray-400 rounded-xl">
+                        <img class="rounded-xl mix-blend-multiply" src="./Styles/images/deal-ana.png" alt="">
+                        <div class="absolute top-[40%] right-[15%] sm:right-[25%] text-center">
+                            <h3 class="font-noto text-xl font-bold text-white">30% Off |
+                                Ana Plant</h3>
+                            <p class=" text-base font-inter font-semibold text-white underline">
+                                Shop Now</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1 image container -->
+                <div class="relative bg-gray-400 rounded-xl">
+                    <img class="rounded-xl mix-blend-multiply" src="./Styles/images/deal-zabo.png" alt="">
+                    <div class="absolute top-[40%] right-[15%] sm:right-[25%] text-center">
+                        <h3 class="font-noto text-xl sm:text-4xl font-bold text-white">25% Off | Zabo
+                            Plant</h3>
+                        <p class=" text-base sm:text-3xl font-inter font-semibold text-white underline">
+                            Shop Now</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Deals section ends from here -->
+
+        <!-- Join section starts from here -->
+        <section class="bg-linear-to-r from-gray-300 to-gray-500 relative w-full h-[275px] sm:h-[533px] mb-7 sm:mb-12">
+
+            <!-- linear gradient container -->
+            <div
+                class="bg-[url('./Styles/images/news-letter-bg.png')] h-[275px] sm:h-[533px] bg-cover bg-center overflow-hidden absolute inset-0 mix-blend-multiply">
+            </div>
+
+            <!-- input fields and header container -->
+            <div class="absolute inset-0 flex flex-col gap-6 justify-center items-center">
+                <div>
+                    <h3 class="text-white font-noto text-[20px] sm:text-5xl font-bold">Join the colorful Bunch</h3>
+                </div>
+                <div class="flex">
+                    <input
+                        class="bg-white font-inter text-base font-normal text-[#00000066] w-[200px] sm:w-[600px] p-2 outline-0"
+                        type="email" name="" id="" placeholder="Write email">
+                    <button
+                        class="cursor-pointer bg-[#E95A08] text-white text-base font-inter font-normal p-2 sm:px-5">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <!-- Join section ends from here -->
+    </main>
+    <!-- Main part ends from here -->
+
+    <!-- Footer part starts from here -->
+    <footer class="max-w-6xl mb-7 sm:my-12 sm:mx-auto grid gap-5 sm:gap-16 grid-cols-1 sm:grid-cols-4">
+        <div class="ms-5 sm:ms-0">
+            <img class="mb-4 cursor-pointer" src="./Styles/images/logo.png" alt="logo image">
+            <p class="font-inter text-base text-[#00000080] font-normal">Indulge your senses with the beauty and
+                fragrance of our fresh flower shop.</p>
+        </div>
+        <div class="ms-5 sm:ms-0">
+            <ul class="flex flex-col gap-8">
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Home</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">About Us</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Blog</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">FAQ</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="ms-5 sm:ms-0">
+            <ul class="flex flex-col gap-8">
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Features</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Pricing</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Privacy Policy</a></li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Terms Of Service</a>
+                </li>
+                <li class="font-inter text-base text-[#6B7280] font-normal list-none"><a href="">Help Center</a></li>
+            </ul>
+        </div>
+        <div class="ms-5 sm:ms-0">
+            <ul class="flex gap-6 items-center">
+                <li><a href=""><img src="./Styles/images/icon-linkedin.png" alt=""></a></li>
+                <li><a href=""><img src="./Styles/images/icon-twitter.png" alt=""></a></li>
+                <li><a href=""><img src="./Styles/images/icon-facebook.png" alt=""></a></li>
+                <li><a href=""><img src="./Styles/images/icon-youtube.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer part ends from here -->
+
+    <!-- Alert Message On Add to cart btn -->
+    <script>
+        function addToCart() {
+            alert("Flower Added To Cart");
+        }
+    </script>
+</body>
+
+</html>
